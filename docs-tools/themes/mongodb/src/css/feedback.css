@@ -1,0 +1,199 @@
+/* Copied from docs-tutorials */
+.deluge {
+  background-color: var(--mongodb-green);
+  border-radius: 4px 4px 0 0;
+  bottom: 0;
+  box-shadow: 0 16px 60px 0 rgba(86, 91, 115, 0.2);
+  color: #fff;
+  font-family: 'Akzidenz', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  position: fixed;
+  right: 20px;
+  transition: width .3s ease;
+  z-index: 100; }
+  .deluge .switch {
+    display: inline-block;
+    line-height: 25px;
+    text-align: center;
+    width: 25px; }
+    .deluge .switch:hover {
+      cursor: pointer; }
+    .deluge .switch.good.selected, .deluge .switch.good.selected:hover {
+      color: var(--mongodb-green); }
+    .deluge .switch.good:hover {
+      color: var(--mongodb-green); }
+    .deluge .switch.bad.selected, .deluge .switch.bad.selected:hover {
+      color: #c85757; }
+    .deluge .switch.bad:hover {
+      color: #8f3c3c; }
+  .deluge .rangestar {
+    line-height: 25px;
+    text-align: center;
+    width: 15px; }
+    .deluge .rangestar:hover {
+      cursor: pointer; }
+  .deluge textarea {
+    border: 1px solid #ddd;
+    font-family: inherit;
+    font-size: inherit;
+    height: 100px;
+    line-height: 1.5em;
+    overflow: auto;
+    resize: none;
+    width: 100%; }
+  .deluge input {
+    width: 100%; }
+  .deluge textarea:invalid,
+  .deluge input:invalid {
+    color: var(--tomato); }
+  .deluge .error {
+    color: red;
+    line-height: 1.1; }
+  .deluge input {
+    width: 100%; }
+  .deluge ul {
+    margin: 0;
+    padding: 0; }
+  .deluge li {
+    list-style-type: none; }
+  .deluge p {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px; }
+  .deluge .caption {
+    font-size: 12px;
+    line-height: 1.4; }
+  @media print {
+    .deluge {
+      display: none; } }
+  @media (max-width: 660px) {
+    .deluge {
+      display: none; } }
+
+.deluge-expanded {
+  border-radius: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 300px; }
+
+.deluge-body {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  background-color: #fff;
+  color: #424950;
+  height: 100%; }
+
+.deluge-body:empty {
+  display: none; }
+
+.deluge-body-expanded {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 116px;
+  padding: 18px;
+  padding-top: 21px; }
+
+.deluge-header {
+  align-items: center;
+  display: flex;
+  font-family: 'Akzidenz', sans-serif;
+  height: 44px;
+  justify-content: center;
+  line-height: 44px;
+  padding: 0 18px;
+  text-align: center; }
+
+.deluge-header a {
+  color: #fff; }
+
+.deluge-header-minimized {
+  min-width: 44px; }
+
+.deluge-helpful {
+  display: flex;
+  padding: 0 10px; }
+
+.deluge-vote {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly; }
+
+.deluge-vote a {
+  color: var(--mongodb-green);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1rem; 
+  text-transform: uppercase; }
+
+.deluge-comment-icon {
+  padding-right: 5px; }
+
+.deluge-open-icon,
+.deluge-close-icon {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer; }
+
+.deluge-close-icon {
+  margin-left: auto; }
+
+.deluge-close-icon-hidden {
+  margin-right: auto;
+  visibility: hidden; }
+
+.deluge-close-link {
+  color: var(--grey-primary);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline;
+  width: 100%; }
+
+.deluge-vote-button {
+  color: var(--mongodb-green);
+  display: inline-block;
+  font-family: 'Akzidenz', sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  width: 50%; }
+
+.deluge-vote-button:hover {
+  cursor: pointer; }
+
+.deluge-fix-button {
+  color: var(--mongodb-green);
+  font-family: 'Akzidenz', sans-serif;
+  text-decoration: none; }
+
+.deluge-fix-button:hover {
+  color: #3c6626;
+  cursor: pointer; }
+
+.deluge-button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .deluge-button-group button {
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 3px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-family: "Akzidenz",sans-serif;
+    font-size: 12px;
+    height: 26px; }
+  .deluge-button-group button:disabled {
+    background-color: var(--light-grey-primary); }
+
+.deluge-questions {
+  font-size: 12px;
+  width: 100%; }

@@ -1,0 +1,186 @@
+@import url("../normalize.css");
+@import url("../colors.css");
+@import url("../basic.css");
+@import url("../font-awesome.css");
+@import url("../font-awesome-v4.css");
+@import url("../mms-icons.css");
+@import url("../charts-icons.css");
+@import url("../code-buttons.css");
+@import url("../feedback.css");
+@import url("../fonts.css");
+@import url("../header.css");
+@import url("../lightbox.css");
+@import url("../marian.css");
+@import url("../mws.css");
+@import url("../tabs.css");
+@import url("../sequence.css");
+@import url("../dropdown.css");
+@import url("../form.css");
+@import url("../uriwriter.css");
+@import url("../toggle.css");
+@import url("../mongodb-base.css");
+@import url("./guides-landing.css");
+@import url("../pills.css");
+@import url("../suggestion.css");
+
+/* Draw a line separating sections. */
+h2::before {
+    border-top: var(--hr-style);
+    content: "";
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+}
+
+.left-toc {
+    width: 248px;
+    padding-left: 40px;
+    position: sticky;
+    padding-top: 56px;
+    height: 100vh;
+    border-right: solid 1px #e0e7e8;
+    top: 45px;
+}
+
+.left-toc a {
+    color: var(--charcoal-grey-two);
+}
+
+.left-toc a:hover {
+    text-decoration: none;
+}
+
+.left-toc__title {
+    font-family: var(--sans-serif-heavy);
+    font-size: 20px;
+    color: #4a4a4a;
+}
+
+.left-toc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-toc li {
+    line-height: 30px;
+    padding-left: 60px;
+    position: relative;
+    left: -50px;
+    width: calc(100% + 50px);
+}
+
+.left-toc li:hover {
+    cursor: pointer;
+}
+
+.left-toc > ul > li > ul > li {
+    &:matches(.active, :hover) {
+        color: var(--mongodb-green);
+        background-color: #f5f6f7;
+        border-right: 3px solid var(--mongodb-green);
+    }
+
+    & > a {
+        display: block;
+
+        &::before {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><g fill="%239B9B9B" fill-rule="evenodd"><path d="M5.4 7.4L3 10l2.5 2.6 1-1L4.8 10l1.6-1.6zm1.4 1L8.3 10l-1.5 1.6 1 1 2.4-2.6-2.5-2.6z"/><path d="M1.9 14.8V2.3h6.7v2.8h2.7v9.7H1.9zM9.5 1H2C1 1 .5 1.6.5 2.3v12.5c0 .8.6 1.4 1.4 1.4h9.4c.7 0 1.3-.6 1.3-1.3V4l-3-3z"/></g></svg>');
+            background-repeat: no-repeat;
+            width: 13px;
+            height: 16px;
+            top: 7px;
+            position: absolute;
+            display: inline-block;
+            content: "";
+            margin-left: -19px;
+        }
+    }
+
+    &:matches(.active, :hover) > a::before {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><g fill="%2369b241" fill-rule="evenodd"><path d="M5.4 7.4L3 10l2.5 2.6 1-1L4.8 10l1.6-1.6zm1.4 1L8.3 10l-1.5 1.6 1 1 2.4-2.6-2.5-2.6z"/><path d="M1.9 14.8V2.3h6.7v2.8h2.7v9.7H1.9zM9.5 1H2C1 1 .5 1.6.5 2.3v12.5c0 .8.6 1.4 1.4 1.4h9.4c.7 0 1.3-.6 1.3-1.3V4l-3-3z"/></g></svg>');
+    }
+}
+
+.left-toc > ul > li > ul > li:matches(.active, :hover) a {
+    color: var(--mongodb-green);
+}
+
+.left-toc ul > li {
+    font-size: 16px;
+    color: var(--charcoal-grey-two);
+}
+
+@media (max-width: 600px) {
+    .left-toc {
+        display: none;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .left-nav-space {
+        display: none;
+    }
+}
+
+/* Hide the root of the TOC */
+.hide-first-toc-level > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hide-first-toc-level > ul > li > a {
+    display: none;
+}
+
+.left-nav-space {
+    max-width: 134px;
+    flex-grow: 1;
+}
+
+.guide__deploymentpill:hover,
+.guide__deploymentpill--active,
+.guide__deploymentpill--seeall {
+    background-color: #AB1352;
+    color: #fff;
+}
+
+.guide-prefs {
+    margin-bottom: 22px;
+}
+
+.guide-prefs__caption {
+    font-family: var(--sans-serif-heavy);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+
+.breadcrumbs {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.67;
+    margin-top: 46px;
+    padding: 0;
+}
+
+.breadcrumbs__bc {
+    list-style: none;
+    font-size: 20px;
+    display:inline;
+}
+
+.breadcrumbs__bc > a {
+    color: var(--mongodb-green);
+}
+
+.show-current-language {
+    color: var(--mongodb-green);
+}
+
+.show-current-deployment {
+    color: #AB1352;
+}
+
+.content .main-column {
+    margin: 0 20px;
+}

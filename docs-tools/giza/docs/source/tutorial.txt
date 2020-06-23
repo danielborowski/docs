@@ -1,0 +1,8 @@
+=========
+Tutorials
+=========
+
+.. toctree::
+
+   /tutorial/set-up-giza
+   /tutorial/use-giza

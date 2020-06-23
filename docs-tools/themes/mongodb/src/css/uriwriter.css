@@ -1,0 +1,11 @@
+.uriwriter__form .mongodb-form__input {
+  font-family: var(--monospace);
+}
+
+#hostlist > input {
+  margin-top: 25px;
+}
+
+#hostlist > input:first-of-type {
+  margin-top: 0;
+}

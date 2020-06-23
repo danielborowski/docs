@@ -1,0 +1,31 @@
+/* Numbered steps directive */
+.sequence-block {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin: 0;
+
+    & > .bullet-block {
+        display: table-cell;
+        padding-right: 10px;
+        width: 2.5em;
+    }
+
+    & .section > h4 {
+        margin: 0;
+    }
+}
+
+.sequence-step {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    width: 24px;
+    font-weight: bold;
+    height: 24px;
+    border-radius: 12px;
+}
+
+.nested-steps > .sequence-block > .section > h4 {
+    margin: 24px 0px;
+}

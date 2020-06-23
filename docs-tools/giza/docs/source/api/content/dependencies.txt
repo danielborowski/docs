@@ -1,0 +1,7 @@
+=========================================
+``dependencies`` -- Dependency Resolution
+=========================================
+
+.. automodule:: giza.content.dependencies
+   :members:
+   :undoc-members:

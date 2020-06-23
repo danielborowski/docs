@@ -1,0 +1,66 @@
+{%- extends "page-layout.html" -%}
+
+{%- block htmltitle %}
+  {%- if not embedded and docstitle %}
+    {%- set titlesuffix = " &mdash; "|safe + docstitle|e %}
+  {%- else %}
+    {%- set titlesuffix = "" %}
+  {%- endif -%}
+
+  <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+{%- endblock -%}
+
+{%- block canonicalref %}
+  {%- if pagename == 'index' %}
+    <link rel="canonical" href="http://docs.cloudmanager.mongodb.com/" />
+  {%- else %}
+    <link rel="canonical" href="http://docs.cloudmanager.mongodb.com/{{pagename}}" />
+  {%- endif -%}
+{%- endblock -%}
+
+{%- block adblockheader %}
+    {%- include "cloud-adblock-header.html" %}
+{%- endblock -%}
+
+{%- block adblock %}
+    {%- include "cloud-adblock.html" %}
+{%- endblock -%}
+
+{%- block sitesearch %}
+  {%- if builder != 'singlehtml' %}
+    <script type="text/javascript">
+      window.googleSearchCx = "017213726194841070573:sntjladnaos"
+      window.googleSearchPlaceholder = "Search Cloud Manager"
+      window.googleSearchResultsUrl = "http://docs.cloudmanager.mongodb.com/search/"
+    </script>
+  {%- endif %}
+{%- endblock -%}
+
+{%- block header %}
+<div id="navbar" data-navprops='{"links": [{"url": "https://docs.mongodb.com/manual/","text": "Server"},{"url": "https://docs.mongodb.com/ecosystem/drivers/","text": "Drivers"},{"url": "https://docs.mongodb.com/cloud/","text": "Cloud","active": true},{"url": "https://docs.mongodb.com/tools/","text": "Tools"},{"url": "https://docs.mongodb.com/guides/","text": "Guides"}]}'></div>
+{%- endblock %}
+
+{%- block onboarding_modal -%}{%- endblock -%}
+
+{%- block alertbar -%}
+  {%- if theme_has_mdb_agent %}
+    <div class="alert alert-info alert-dismissible fade in" role="alert" style="margin-left: 20px">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <span class="alert-message">
+
+        <h4 class="alert-heading" style="margin-bottom: 10px;">The MongoDB Agent has been released!</h4>
+        The Monitoring, Backup and Automation Agents have been merged into the MongoDB Agent.
+
+        <a class="btn btn-success" style="margin-left: 5px; margin-bottom: 5px;" href="https://docs.cloudmanager.mongodb.com/reference/faq/faq-mongodb-agent/">Learn More</a>
+
+      </span>
+    </div>
+  {%- endif %}
+{%- endblock -%}
+
+{% block language_selector %}{% endblock %}
+
+{% block version_selector %}{% endblock %}
+{%- block pdflink %}{%- endblock %}

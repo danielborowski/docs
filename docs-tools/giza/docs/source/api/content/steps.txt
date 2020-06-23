@@ -1,0 +1,12 @@
+=========================================
+``steps`` -- Procedural Content Generator
+=========================================
+
+.. automodule:: giza.content.steps
+
+.. toctree::
+
+   /api/content/steps/models
+   /api/content/steps/views
+   /api/content/steps/inheritance
+   /api/content/steps/tasks

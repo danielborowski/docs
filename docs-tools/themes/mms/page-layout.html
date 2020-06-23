@@ -1,0 +1,36 @@
+{%- extends "layout.html" -%}
+{% set script_files = script_files + ["_static/mms-version-selector.js"] %}
+
+{%- block header_logo %}
+    <div class="logo pull-left">
+      <a href="{{ url_root }}">
+        {{ theme_sitename }}
+      </a>
+    </div>
+{%- endblock -%}
+
+{%- block googlecse_opensearch -%} {%- endblock -%}
+
+{%- block gcseresults -%} {%- endblock -%}
+
+{%- block commnav -%} {%- endblock -%}
+
+{%- block subnav -%} {%- endblock -%}
+
+{%- block translationslink -%} {%- endblock -%}
+
+{%- block editlink -%} {%- endblock -%}
+
+{%- block epublink -%} {%- endblock -%}
+
+{%- block editlink_icon %} {% endblock %}
+
+{%- block langauge_selector %}{%- endblock -%}
+
+{%- block righttoc %} {% endblock %}
+
+{%- block alertbar -%}
+  <div class="redirect-alert alert alert-warning hide">
+    <span class="alert-message">You were redirected from a different version of the documentation. Click <a href="#" class="redirect-link">here</a> to go back.</span>
+  </div>
+{%- endblock -%}

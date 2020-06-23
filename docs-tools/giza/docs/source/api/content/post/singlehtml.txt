@@ -1,0 +1,7 @@
+==========================================
+``singlehtml`` -- Process SingleHTML Output
+==========================================
+
+.. automodule:: giza.content.post.singlehtml
+   :members:
+   :undoc-members:

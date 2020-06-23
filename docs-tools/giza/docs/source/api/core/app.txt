@@ -1,0 +1,9 @@
+=============================
+``app`` -- Process Management
+=============================
+
+.. automodule:: giza.core.app
+
+.. autoclass:: BuildApp
+   :members:
+   :undoc-members:

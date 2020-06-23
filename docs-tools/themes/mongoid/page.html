@@ -1,0 +1,26 @@
+{%- extends "layout.html" -%}
+
+{%- block translationslink -%} {%- endblock -%}
+
+{%- block version_selector %} {% endblock %}
+
+{%- block format_selector %} {%- endblock -%}
+
+{%- block rating -%}{%- endblock -%}
+
+
+{%- block righttoc %} {% endblock %}
+
+{%- block editlink_icon %}{% endblock %}
+
+
+{%- block sitesearch %}
+  {%- if builder != 'singlehtml' %}
+   <script>
+     window.googleSearchCx = "014132741538533607290:xl0kbqanc9y"
+     window.googleSearchPlaceholder = "Search Mongoid"
+     window.googleSearchResultsUrl = "http://docs.mongodb.com/mongoid/{{version}}/search/"
+   </script>
+  {%- endif %}
+{%- endblock -%}
+   

@@ -1,0 +1,30 @@
+==================
+Content Generation
+==================
+
+The Giza content generation modules are responsible for pre and post
+processing the content and output.
+
+.. toctree::
+
+   /api/content/assets
+   /api/content/dependencies
+   /api/content/examples
+   /api/content/hash
+   /api/content/helper
+   /api/content/images
+   /api/content/includes
+   /api/content/intersphinx
+   /api/content/links
+   /api/content/options
+   /api/content/param
+   /api/content/primer
+   /api/nav/content-post
+   /api/content/redirects
+   /api/content/release
+   /api/content/robots
+   /api/content/source
+   /api/content/sphinx
+   /api/content/steps
+   /api/content/table
+   /api/content/tocs

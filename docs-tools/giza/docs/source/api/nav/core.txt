@@ -1,0 +1,8 @@
+====================
+Core Giza Mechanisms
+====================
+
+.. toctree::
+
+   /api/core/app
+   /api/core/task
